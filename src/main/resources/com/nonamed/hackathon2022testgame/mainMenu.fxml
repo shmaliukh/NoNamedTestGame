@@ -10,7 +10,7 @@
          <font>
             <Font size="50.0" />
          </font></Button>
-      <Button fx:id="exitButton" layoutX="400.0" layoutY="482.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="400.0" text="Exit" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="400.0">
+      <Button fx:id="exitButton" onAction="#onCloseButtonClick" layoutX="400.0" layoutY="482.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="400.0" text="Exit" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="400.0">
          <font>
             <Font size="50.0" />
          </font></Button>
