@@ -3,7 +3,6 @@ module com.nonamed.hackathon2022testgame {
     requires javafx.fxml;
     requires lombok;
     requires org.slf4j;
-    requires java.logging;
 
 
     opens com.nonamed.hackathon2022testgame to javafx.fxml;
