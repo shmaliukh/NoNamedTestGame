@@ -3,7 +3,7 @@
   
   :bangbang: Для отримання гри потрібно завантажити NoNamedTestgame.zip->розпакувати, відкрити папку "bin" та запусити file:app.bat. 
   
-   ![This is an image](/picProgram.png)
+   ![This is an image](/image-file-to-execute_bin.jpg)
    
 ## Основні блоки гри:
  :white_check_mark: Головне меню;
