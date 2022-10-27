@@ -17,19 +17,18 @@ import lombok.Getter;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 @Getter
 public final class GameWorldHandler implements Serializable {
 
     public static String MISSION_1 = "   Goal: " +
-                                            "\n* kill " + Config.HERO_ENEMY_GOAL + " enemy" +
-                                            "\n* find " + Config.HERO_KEY_GOAL + " keys";
+            "\n* kill " + Config.HERO_ENEMY_GOAL + " enemy" +
+            "\n* find " + Config.HERO_KEY_GOAL + " keys";
     public static String MISSION_V_4 = "    Mission: " +
-                                            "\n✔ kill enemies" +
-                                            "\n✔ find " + Config.HERO_KEY_GOAL + " keys" +
-                                            "\n* go home";
+            "\n✔ kill enemies" +
+            "\n✔ find " + Config.HERO_KEY_GOAL + " keys" +
+            "\n* go home";
     public static String MISSION_V_2 = "    Mission: " +
             "\n✔ kill enemies" +
             "\n* find " + Config.HERO_KEY_GOAL + " keys";
@@ -81,7 +80,7 @@ public final class GameWorldHandler implements Serializable {
         gameWorld.getGamePane().getChildren().add(homeBorder);
     }
 
-    private void addKeyHomeImageView(int posX, int posY){
+    private void addKeyHomeImageView(int posX, int posY) {
         keyImageView = new ImageView(new Image("keyHome.png"));
         keyImageView.setX(posX);
         keyImageView.setY(posY);
@@ -99,7 +98,7 @@ public final class GameWorldHandler implements Serializable {
 
     private void initTimer() {
         Thread enemySpawn = new Thread(() -> {
-            while (true){
+            while (true) {
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
@@ -109,7 +108,7 @@ public final class GameWorldHandler implements Serializable {
                 Platform.runLater(new Runnable() {
                     @Override
                     public void run() {
-                        addPersonToScene(new DarkPerson(800,450));
+                        addPersonToScene(new DarkPerson(800, 450));
                     }
                 });
             }
@@ -140,13 +139,13 @@ public final class GameWorldHandler implements Serializable {
         timer = new AnimationTimer() {
             @Override
             public void handle(long l) {
-                if (!keySpawn.isAlive() && !gameWorld.getGamePane().getChildren().contains(keyImageView)){
+                if (!keySpawn.isAlive() && !gameWorld.getGamePane().getChildren().contains(keyImageView)) {
                     Config.IS_KEY_GOAL = true;
                     setUpGoalText();
                 }
 
-                if (HERO.getGroup().getBoundsInParent().intersects(keyImageView.getBoundsInParent())){
-                    if (keyArrayList.contains(keyImageView)){
+                if (HERO.getGroup().getBoundsInParent().intersects(keyImageView.getBoundsInParent())) {
+                    if (keyArrayList.contains(keyImageView)) {
                         gameWorld.getGamePane().getChildren().remove(keyImageView);
                     }
                 }
@@ -164,19 +163,19 @@ public final class GameWorldHandler implements Serializable {
                         timer.stop();
                     }
                 }
-                    for (AbstractPerson person : personArrayList) {
-                        if (person.getHealth() <= 0) {
-                            gameWorld.getGamePane().getChildren().remove(person.getGroup());
-                            personArrayList.remove(person);
-                            if(Config.HERO_ENEMY_GOAL > 0){
-                                Config.HERO_ENEMY_GOAL -= 1;
+                for (AbstractPerson person : personArrayList) {
+                    if (person.getHealth() <= 0) {
+                        gameWorld.getGamePane().getChildren().remove(person.getGroup());
+                        personArrayList.remove(person);
+                        if (Config.HERO_ENEMY_GOAL > 0) {
+                            Config.HERO_ENEMY_GOAL -= 1;
 
-                            }
-                            setUpGoalText();
-                        } else {
-                            person.move();
                         }
+                        setUpGoalText();
+                    } else {
+                        person.move();
                     }
+                }
 
                 HERO.move();
             }
@@ -186,7 +185,7 @@ public final class GameWorldHandler implements Serializable {
     }
 
 
-    public void setUpGoalText(){
+    public void setUpGoalText() {
         MISSION_1 = "   Goal: " +
                 "\n* kill " + Config.HERO_ENEMY_GOAL + " enemy" +
                 "\n* find " + Config.HERO_KEY_GOAL + " keys";
@@ -201,11 +200,11 @@ public final class GameWorldHandler implements Serializable {
                 "\n* kill enemies" +
                 "\n✔ find " + Config.HERO_KEY_GOAL + " keys";
 
-        if (Config.HERO_ENEMY_GOAL == 0 && Config.IS_KEY_GOAL){
+        if (Config.HERO_ENEMY_GOAL == 0 && Config.IS_KEY_GOAL) {
             missionText.setText(MISSION_V_4);
-        } else if (Config.HERO_ENEMY_GOAL == 0){
+        } else if (Config.HERO_ENEMY_GOAL == 0) {
             missionText.setText(MISSION_V_2);
-        } else if (Config.IS_KEY_GOAL){
+        } else if (Config.IS_KEY_GOAL) {
             missionText.setText(MISSION_V_3);
         } else
             missionText.setText(MISSION_1);

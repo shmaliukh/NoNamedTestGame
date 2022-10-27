@@ -32,11 +32,11 @@ public final class GameWorld {
         gameScene = new Scene(gamePane);
     }
 
-    public void registerObject(int id, ImageView imageView){
+    public void registerObject(int id, ImageView imageView) {
         gamePane.getChildren().add(id, imageView);
     }
 
-    public void registerObject(int id, Group imageView){
+    public void registerObject(int id, Group imageView) {
         gamePane.getChildren().add(imageView);
     }
 

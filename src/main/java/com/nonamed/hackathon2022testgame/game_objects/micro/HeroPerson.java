@@ -2,7 +2,6 @@ package com.nonamed.hackathon2022testgame.game_objects.micro;
 
 import com.nonamed.hackathon2022testgame.App;
 import com.nonamed.hackathon2022testgame.Config;
-import javafx.animation.AnimationTimer;
 import javafx.scene.image.Image;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;

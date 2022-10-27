@@ -8,7 +8,7 @@ public class SaveReadService {
 
     public static final String TMP_SAVE_SER = "/tmp/save.ser";
 
-    public static void save(GameWorldHandler gameWorldHandler){
+    public static void save(GameWorldHandler gameWorldHandler) {
         try {
             FileOutputStream fileOut =
                     new FileOutputStream(TMP_SAVE_SER);
@@ -22,7 +22,7 @@ public class SaveReadService {
         }
     }
 
-    public static GameWorldHandler read(){
+    public static GameWorldHandler read() {
         GameWorldHandler read = null;
         try {
             FileInputStream fileIn = new FileInputStream("TMP_SAVE_SER");

@@ -30,32 +30,32 @@ public class SettingsMenuController implements Initializable {
 
 
     @FXML
-    protected void onSpeedSliderAction(){
+    protected void onSpeedSliderAction() {
         Config.HERO_SPEED = speedSlider.valueProperty().getValue().intValue();
         speedValueText.setText(Config.HERO_SPEED + "");
     }
 
     @FXML
-    protected void onHeroDamageSliderAction(){
+    protected void onHeroDamageSliderAction() {
         Config.HERO_DAMAGE = heroDamageSlider.valueProperty().getValue().intValue();
         heroDamageText.setText(Config.HERO_DAMAGE + "");
     }
 
     @FXML
-    protected void onHeroHealthSliderAction(){
+    protected void onHeroHealthSliderAction() {
         Config.HERO_HEALTH = heroHealthSlider.valueProperty().getValue().intValue();
         heroHealthText.setText(Config.HERO_HEALTH + "");
     }
 
     @FXML
-    protected void onEnemySpeedSliderAction(){
+    protected void onEnemySpeedSliderAction() {
         Config.DARK_PERSON_SPEED = enemySpeedSlider.valueProperty().getValue().intValue();
         enemySpeedText.setText(Config.DARK_PERSON_SPEED + "");
     }
 
 
     @FXML
-    protected void onMainMenuButtonClick(){
+    protected void onMainMenuButtonClick() {
         Scene mainMenuScene = new MainMenu().mainMenuScene;
         App.stage.setScene(mainMenuScene);
     }
@@ -65,7 +65,7 @@ public class SettingsMenuController implements Initializable {
         setSliderAndTextValueFromConfig();
     }
 
-    public void setSliderAndTextValueFromConfig(){
+    public void setSliderAndTextValueFromConfig() {
         speedSlider.setValue(Config.HERO_SPEED);
         speedValueText.setText(Config.HERO_SPEED + "");
 

@@ -1,6 +1,5 @@
 package com.nonamed.hackathon2022testgame;
 
-import com.nonamed.hackathon2022testgame.sercives.SaveReadService;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
@@ -11,13 +10,13 @@ import java.util.ResourceBundle;
 public class WinMenuController implements Initializable {
 
     @FXML
-    protected void onMainMenuButtonClick(){
+    protected void onMainMenuButtonClick() {
         Scene mainMenuScene = new MainMenu().mainMenuScene;
         App.stage.setScene(mainMenuScene);
     }
 
     @FXML
-    protected void onRetryButtonClick(){
+    protected void onRetryButtonClick() {
         Scene gameScene = new GameWorldHandler().getGameWorld().getGameScene();
         App.stage.setScene(gameScene);
     }

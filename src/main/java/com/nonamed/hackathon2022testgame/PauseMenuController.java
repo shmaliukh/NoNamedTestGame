@@ -11,19 +11,19 @@ import java.util.ResourceBundle;
 public class PauseMenuController implements Initializable {
 
     @FXML
-    protected void onContinueButtonClick(){
+    protected void onContinueButtonClick() {
         Scene continueGameScene = new GameWorldHandler().getGameWorld().getGameScene();
         App.stage.setScene(continueGameScene);
     }
 
     @FXML
-    protected void onMainMenuButtonClick(){
+    protected void onMainMenuButtonClick() {
         Scene mainMenuScene = new MainMenu().mainMenuScene;
         App.stage.setScene(mainMenuScene);
     }
 
     @FXML
-    protected void onRetryButtonClick(){
+    protected void onRetryButtonClick() {
         Scene gameScene = SaveReadService.read().getGameWorld().gameScene;
         App.stage.setScene(gameScene);
     }

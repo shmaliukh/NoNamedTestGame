@@ -4,7 +4,8 @@ import com.nonamed.hackathon2022testgame.Config;
 import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
 
-import static com.nonamed.hackathon2022testgame.Config.*;
+import static com.nonamed.hackathon2022testgame.Config.NAME_LIST;
+import static com.nonamed.hackathon2022testgame.Config.RANDOM;
 import static com.nonamed.hackathon2022testgame.GameWorldHandler.HERO;
 
 public class DarkPerson extends AbstractPerson {

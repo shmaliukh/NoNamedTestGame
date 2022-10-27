@@ -3,8 +3,6 @@ package com.nonamed.hackathon2022testgame.game_objects.micro;
 import com.nonamed.hackathon2022testgame.game_objects.BaseObject;
 import javafx.animation.AnimationTimer;
 import javafx.scene.Group;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Line;
 import javafx.scene.text.Font;
