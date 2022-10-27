@@ -1,0 +1,33 @@
+
+f
+java:S1104"PMake HERO a static final constant or non-public and provide accessors if needed.(ØˆŞ²
+q
+java:S1104"[Make personArrayList a static final constant or non-public and provide accessors if needed.(–Æìš
+z
+java:S1104"_Make baseObjectArrayList a static final constant or non-public and provide accessors if needed.(ÃàÅ¶ùÿÿÿÿ
+@
+java:S1444"*Make this "public static HERO" field final(ØˆŞ²
+e
+java:S3008"ORename this field "HERO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ØˆŞ²
+G
+java:S1948"1Make "personArrayList" transient or serializable.(–Æìš
+P
+java:S1948"5Make "baseObjectArrayList" transient or serializable.(ÃàÅ¶ùÿÿÿÿ
+H
+java:S1948"-Make "missionText" transient or serializable.(”¹ùèùÿÿÿÿ
+J
+java:S1948"/Make "homeImageView" transient or serializable.(ÆÖ’ùÿÿÿÿ
+A
+java:S1948"+Make "gameWorld" transient or serializable.(ÖàÑº
+B
+java:S1948"'Make "timer" transient or serializable.(ñô‚şÿÿÿÿ
+V	java:S125&"<This block of commented-out lines of code should be removed.(Ïô¹ÿÿÿÿÿ
+L
+java:S2696<"6Make the enclosing method "static" or remove this set.(¼â–‡
+Q
+java:S2696D"6Make the enclosing method "static" or remove this set.(¹ôŠ¢ÿÿÿÿÿ
+T
+java:S1155F">Use isEmpty() to check whether the collection is empty or not.(õğòŸ
+Q
+java:S2696K"6Make the enclosing method "static" or remove this set.(¹ôŠ¢ÿÿÿÿÿ
+V	java:S125e"<This block of commented-out lines of code should be removed.(À£şıÿÿÿÿ

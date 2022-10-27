@@ -1,0 +1,44 @@
+
+q
+java:S1104	"VMake HERO_SPEED a static final constant or non-public and provide accessors if needed.(»©®‹ûÿÿÿÿ
+m
+java:S1104
+"WMake HERO_DAMAGE a static final constant or non-public and provide accessors if needed.(‘ç‹è
+t
+java:S1104"WMake HERO_HEALTH a static final constant or non-public and provide accessors if needed.(†…ÿ›8Û±ëªÁ0
+x
+java:S1104"]Make DARK_PERSON_SPEED a static final constant or non-public and provide accessors if needed.(õ’÷ıÿÿÿÿÿ
+h
+java:S1104"RMake VOLUME a static final constant or non-public and provide accessors if needed.(ıÇó‚
+w
+java:S1104"UMake NAME_LIST a static final constant or non-public and provide accessors if needed.(„ø£ÿÿÿÿÿ8ˆê¨ªÁ0
+K
+java:S1444	"0Make this "public static HERO_SPEED" field final(»©®‹ûÿÿÿÿ
+G
+java:S1444
+"1Make this "public static HERO_DAMAGE" field final(‘ç‹è
+N
+java:S1444"1Make this "public static HERO_HEALTH" field final(†…ÿ›8Ü±ëªÁ0
+R
+java:S1444"7Make this "public static DARK_PERSON_SPEED" field final(õ’÷ıÿÿÿÿÿ
+B
+java:S1444",Make this "public static VOLUME" field final(ıÇó‚
+Q
+java:S1444"/Make this "public static NAME_LIST" field final(„ø£ÿÿÿÿÿ8‰ê¨ªÁ0
+p
+java:S3008	"URename this field "HERO_SPEED" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»©®‹ûÿÿÿÿ
+l
+java:S3008
+"VRename this field "HERO_DAMAGE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘ç‹è
+s
+java:S3008"VRename this field "HERO_HEALTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†…ÿ›8à±ëªÁ0
+w
+java:S3008"\Rename this field "DARK_PERSON_SPEED" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ’÷ıÿÿÿÿÿ
+g
+java:S3008"QRename this field "VOLUME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıÇó‚
+v
+java:S3008"TRename this field "NAME_LIST" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„ø£ÿÿÿÿÿ8ê¨ªÁ0
+?
+java:S2386"Make this member "protected".(„ø£ÿÿÿÿÿ8‘ê¨ªÁ0
+U
+java:S1118":Add a private constructor to hide the implicit public one.(°£ğãÿÿÿÿÿ
